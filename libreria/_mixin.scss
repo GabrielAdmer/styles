@@ -1,0 +1,46 @@
+@mixin max-width($max-width: 300px) {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+@mixin centrar() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Media Queries Mixin
+**********************/
+
+@mixin media($breakpoint) {
+	@if $breakpoint == sm {
+		@media screen and (min-width: 500px) {
+			@content;
+		}
+	} @else if $breakpoint == md {
+		@media screen and (min-width: 768px) {
+			@content;
+		}
+	} @else if $breakpoint == lg {
+		@media screen and (min-width: 992px) {
+			@content;
+		}
+	} @else if $breakpoint == xlg {
+		@media screen and (min-width: 1200px) {
+			@content;
+		}
+	} @else if $breakpoint == desktop-l {
+		@media screen and (min-width: 1480px) {
+			@content;
+		}
+	} @else if $breakpoint == desktop-xl {
+		@media screen and (min-width: 1780px) {
+			@content;
+		}
+	}
+}
+
+//para llamr el mixin de media queri
+//@include media(desktop-s){
+// 		display :flex
+// }

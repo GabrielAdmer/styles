@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Nunito Sans', sans-serif;
+	min-height: 100vh;
+	max-width: 100vw;
+}
+
+img {
+	width: 100%;
+	vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.body {
+	min-height: 100vh;
+	max-width: 100vw;
+	background-color: $VeryDarkBlueDark;
+	padding-bottom: 1rem;
+}
+
+.mt-1 {
+	margin-top: 5px;
+}
+
+.mt-5 {
+	margin-top: 20px;
+}
+
+.mb-1 {
+	margin-bottom: 5px;
+}
+
+.mb-5 {
+	margin-bottom: 20px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.mr-1 {
+	margin-right: 5px;
+}
+.mr-5 {
+	margin-right: 20px;
+}

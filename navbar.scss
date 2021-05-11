@@ -1,0 +1,27 @@
+.navbar {
+	padding: 10px;
+	color: $White;
+	height: 80px;
+	background-color: $DarkBlue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	transition: padding 0.5s ease;
+
+	@include media(md) {
+		padding: 0 100px;
+	}
+
+	& h3 {
+		font-size: 1.6rem;
+	}
+
+	& span {
+		margin-left: 0.5rem;
+		font-size: 1.4rem;
+	}
+	& i {
+		font-size: 1.4rem;
+	}
+}

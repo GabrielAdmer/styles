@@ -1,0 +1,8 @@
+.busqueda-container {
+	padding: 0 20px;
+	@include media(md) {
+		padding: 0 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+}

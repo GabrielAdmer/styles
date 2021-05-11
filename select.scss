@@ -1,0 +1,41 @@
+.select-container {
+	position: relative;
+}
+.select-title {
+	height: 50px;
+	width: 200px;
+	background-color: $DarkBlue;
+	margin-top: 30px;
+	border-radius: 0.5rem;
+	color: $White;
+	font-size: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+
+	transition: 1s ease;
+}
+
+.select-options {
+	display: none;
+	background-color: $DarkBlue;
+	flex-direction: column;
+	width: 200px;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+	position: absolute;
+	box-shadow: $shadow;
+
+	& span {
+		color: white;
+		padding: 0.7rem;
+		font-size: 1.5rem;
+		text-transform: capitalize;
+	}
+}
+
+.active {
+	display: flex;
+	transition: 0.5s ease;
+}
